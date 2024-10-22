@@ -17,21 +17,28 @@
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   transition: all 0.3s ease;
   overflow: hidden;
   display: none; /* Hidden by default */
-  opacity: 0;    /* Ensure it starts as invisible */
+  opacity: 0; /* Ensure it starts as invisible */
 }
 
 #choose.active {
-  display: flex;  /* Show the dialog box */
+  display: flex; /* Show the dialog box */
   opacity: 1;
 }
 
-
 /* Additional styles for close button */
 #fb_wrapper {
+  margin: 0;
+  padding: 10;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+}
+#tw_wrapper {
   margin: 0;
   padding: 10;
   height: 100%;
@@ -54,6 +61,13 @@
   top: 5px;
 }
 #choose_ig {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 5px;
+}
+
+#choose_tw {
   width: 50px;
   height: 50px;
   position: relative;
@@ -118,8 +132,7 @@ header hr {
   display: grid;
   grid-template-columns: 50px 50px 50px 50px;
   grid-template-rows: auto;
-  grid-template-areas:
-  " but . . . . nav";
+  grid-template-areas: " but . . . . nav";
 }
 #topper img {
   width: 98%;
@@ -214,17 +227,13 @@ header hr {
   animation-iteration-count: infinite;
   animation-duration: 2s;
   animation-name: dim;
-
-
 }
-@keyframes dim { 
+@keyframes dim {
   from {
     background-color: #952370;
-
   }
   to {
     background-color: #4652b9;
-
   }
 }
 #vote2:active {
@@ -239,7 +248,6 @@ header hr {
   border-width: 1px;
   border-radius: 5px;
   margin-bottom: 10px;
-
 }
 #vote:active {
   background-color: white;
@@ -252,7 +260,6 @@ header hr {
   border-width: 1px;
   margin-bottom: 10px;
 }
-
 
 /* Modern cancel button */
 .cancel-btn {
