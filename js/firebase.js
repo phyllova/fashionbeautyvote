@@ -1,13 +1,13 @@
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBTPzh5RtlERnfNY-3EYCOvVfnHBBrJiZc",
-  authDomain: "foodtracemixer.firebaseapp.com",
-  databaseURL: "https://foodtracemixer-default-rtdb.firebaseio.com",
-  projectId: "foodtracemixer",
-  storageBucket: "foodtracemixer.appspot.com",
-  messagingSenderId: "945536910378",
-  appId: "1:945536910378:web:8d889b030e29ff40c5ef53"
+  apiKey: "AIzaSyByXd9W23DrSek4bZwbXlKjaoXFYDO-tsI",
+  authDomain: "emirateswill.firebaseapp.com",
+  databaseURL: "https://emirateswill-default-rtdb.firebaseio.com",
+  projectId: "emirateswill",
+  storageBucket: "emirateswill.appspot.com",
+  messagingSenderId: "937261210149",
+  appId: "1:937261210149:web:9a3e633abcedf76f453dcc"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
