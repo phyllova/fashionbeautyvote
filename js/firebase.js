@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyByXd9W23DrSek4bZwbXlKjaoXFYDO-tsI",
-  authDomain: "emirateswill.firebaseapp.com",
-  databaseURL: "https://emirateswill-default-rtdb.firebaseio.com",
-  projectId: "emirateswill",
-  storageBucket: "emirateswill.appspot.com",
-  messagingSenderId: "937261210149",
-  appId: "1:937261210149:web:9a3e633abcedf76f453dcc",
+  apiKey: "AIzaSyDQPvxVawcTkc8Wdm89HGx6ONVpkSQ2ju4",
+  authDomain: "asianclas.firebaseapp.com",
+  databaseURL: "https://asianclas-default-rtdb.firebaseio.com",
+  projectId: "asianclas",
+  storageBucket: "asianclas.appspot.com",
+  messagingSenderId: "90933232698",
+  appId: "1:90933232698:web:c3ee304c55f3e79c66a103"
 };
 firebase.initializeApp(firebaseConfig);
 const appCheck = firebase.appCheck();
